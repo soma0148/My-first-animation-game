@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spil</title>
+    <link rel="stylesheet" href="css/spil.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="spil.html">Spil</a>
+        <a href="ide.html">Ide</a>
+        <a href="teknisk.html">Teknisk dokumentation</a>
+        <a href="design.html">Design</a>
+        <a href="assets.html">Assets</a>
+        
+      </nav>
+    </header>
+    <main>
+      <div id="screen">
+        <div id="game">
+          <div id="game_background"></div>
+          <div id="game_elements">
+            <div id="good_container">
+              <div id="good_sprite"></div>
+            </div>
+            <div id="bad_container">
+              <div id="bad_sprite"></div>
+            </div>
+          </div>
+          <div id="game_foreground"></div>
+          <div id="game_ui">
+            <div id="score_board">
+              <span id="myPoints">0</span>
+            </div>
+            <div id="time_board">
+              <div id="time_container">
+                <div id="time_sprite"></div>
+              </div>
+            </div>
+            <div id="energy_board">
+              <span id="myLives">3</span>
+            </div>
+          </div>
+        </div>
+        <div id="start" class="">
+          <div id="spil_btn_1" class="knap"></div>
+          <div id="inst_btn" class="knap"></div>
+        </div>
+        <div id="how_to_play" class="">
+          <div id="spil_btn_2" class="knap"></div>
+        </div>
+        <div id="game_over" class="">
+          <div id="restart_1" class="knap"></div>
+        </div>
+        <div id="level_complete" class="">
+          <div id="restart_2" class="knap"></div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="spil.js"></script>
+  </body>
+  <audio id="back_snd" src="sound/background.mp3"></audio>
+  <audio id="button_snd" src="sound/button.mp3"></audio>
+  <audio id="gameover_snd" src="sound/gameover.mp3"></audio>
+  
+</html>

@@ -1,0 +1,352 @@
+
+main,
+header,
+footer {
+  max-width: 1400px;
+  margin: 2% auto;
+}
+
+#screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  /* background-color: red; */
+  overflow: hidden;
+}
+
+/* -------------------- GAME -------------------- */
+#game {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  /* background-color: aqua; */
+}
+#game_background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #00FF00;
+  background-image: url(../img/game.svg);
+  background-size: cover;
+}
+#home {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/home.svg);
+  background-size: 100%;
+  pointer-events: none;
+}
+
+#game_elements {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#game_foreground {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/forgrund.svg);
+  background-size: 100%;
+  pointer-events: none;
+}
+
+#game_ui {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* -------------------- SPIL ELEMENTER (FIGURER) -------------------- */
+
+#good_container {
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 1/1;
+}
+#good_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/rat.svg);
+  background-size: cover;
+}
+#bad_container {
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 1/1;
+}
+#bad_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/football.svg);
+  background-size: cover;
+}
+
+/* -------------------- UI ELEMENTER -------------------- */
+
+/* hjerte baggrund til liv */
+#energy_board {
+  position: absolute;
+  top: 1%;
+  right: 10%;
+  width: 5.2%;
+  aspect-ratio: 1/1;
+  background-image: url(../img/lives.svg);
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#myLives {
+  font-family: "Baloo Da 2", cursive;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 3cqw;
+  line-height: 0;
+}
+/* rød baggrund til point */
+#score_board {
+  position: absolute;
+  top: 1%;
+  left: 10%;
+  width: 5%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/points.svg);
+  background-size: 100%;
+}
+#myPoints {
+  font-family: "Baloo Da 2", cursive;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 3cqw;
+  line-height: 0;
+}
+
+#time_container {
+  position: absolute;
+  top: 2%;
+  left: 35%;
+  width: 30%;
+  height: 4%;
+  border: 0.1rem solid black;
+  background-color: #D4145A;
+  border-radius: 0.5rem;
+}
+#time_sprite {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00FF00;
+  border-radius: 0.5rem;
+}
+
+/* -------------------- ANDRE SKÆRME -------------------- */
+
+#start {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/titel.svg);
+  background-size: cover;
+}
+#how_to_play {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/info.svg);
+  background-size: cover;
+}
+#game_over {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/EndScreen.svg);
+  background-size: cover;
+}
+#level_complete {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/levelcomplete.svg);
+  background-size: cover;
+}
+
+/* -------------------- KNAPPER -------------------- */
+
+.knap {
+  position: absolute;
+  width: 20%;
+  aspect-ratio: 3/1;
+  cursor: pointer;
+  background-size: 100%;
+}
+#spil_btn_1 {
+  background-image: url(../img/spilbutton.svg);
+  top: 50%;
+  left: 30%;
+}
+#spil_btn_2 {
+  background-image: url(../img/spilbutton.svg);
+  top: 80%;
+  right: 5%;
+}
+#inst_btn {
+  background-image: url(../img/inst_btn.svg);
+  top: 50%;
+  left: 5%;
+}
+#restart_1,
+#restart_2 {
+  background-image: url(../img/restartbutton[1431].svg);
+  top: 50%;
+  left: 40%;
+}
+
+/* -------------------- POSITIONER -------------------- */
+
+.pos1 {
+  top: -10%;
+  left: 20%;
+}
+.pos2 {
+  top: -10%;
+  left: 30%;
+}
+.pos3 {
+  top: -10%;
+  left: 40%;
+}
+.pos4 {
+  top: -10%;
+  left: 50%;
+}
+.pos5 {
+  top: -10%;
+  left: 60%;
+}
+.pos6 {
+  top: -10%;
+  left: 70%;
+}
+.pos7 {
+  top: -10%;
+  left: 80%;
+}
+
+/* -------------------- DELAYS -------------------- */
+
+.delay1 {
+  animation-delay: 0s;
+}
+.delay2 {
+  animation-delay: 0.5s;
+}
+.delay3 {
+  animation-delay: 1s;
+}
+.delay4 {
+  animation-delay: 1.5s;
+}
+
+/* -------------------- ANDRE KLASSER -------------------- */
+
+.hide {
+  display: none;
+}
+
+.freeze {
+  animation-play-state: paused;
+}
+
+/* -------------------- ANIMATIONER -------------------- */
+
+.skrump {
+  animation-name: skrump_kf;
+  animation-duration: 20s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  transform-origin: right center;
+}
+@keyframes skrump_kf {
+  0% {
+    scale: 1 1;
+  }
+
+  100% {
+    scale: 0 1;
+  }
+}
+
+.fall {
+  animation-name: fall_kf;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes fall_kf {
+  from {
+    translate: 0% -110%;
+  }
+  to {
+    translate: 0% 600%;
+  }
+}
+
+.fade {
+  animation-name: fade_kf;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fade_kf {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.spin {
+  animation-name: spin_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes spin_kf {
+  from {
+    rotate: 0deg;
+    scale: 1;
+  }
+  to {
+    rotate: 360deg;
+    scale: 0;
+  }
+}
